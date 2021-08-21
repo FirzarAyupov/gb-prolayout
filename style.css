@@ -702,4 +702,10 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
+
+@media (max-width: 1024px) {
+  .header-banner {
+    height: 1vh;
+  }
+}
 /*# sourceMappingURL=style.css.map */
