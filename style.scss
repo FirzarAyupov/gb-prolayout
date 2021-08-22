@@ -48,7 +48,9 @@ body{
     border: none;
     display: block;
 }
-
+.page-header-search-btn:hover svg{
+    fill: orange;
+}
 .account-btn svg {
     width: 29px;
     height: 29px;
