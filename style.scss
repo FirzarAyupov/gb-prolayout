@@ -10,6 +10,11 @@ body{
     background-color: #fff;
 }
 
+.padding-site {
+    padding-left: 12.481%;
+    padding-right: 12.481%;
+    box-sizing: border-box;
+}
 .container{
     max-width: $max-width;
     margin: auto;
@@ -289,6 +294,48 @@ fill: red;
 
 .header-banner-subtitle span{
     color: #F16D7F;
+}
+.single-header{
+    background-color: #F8F3F4;
+    height: 148px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.single-title{
+    text-transform: uppercase;
+    color: #F16D7F;
+}
+.bread-crumbs{
+    list-style: none;
+}
+.bread-crumbs li{
+    display: inline;
+    text-transform: uppercase;
+}
+.bread-crumbs li::after{
+    content: "/";
+    margin: 0 3px 0 6px;
+}
+li:last-child::after{
+    content: none;
+}
+.bread-crumbs a{
+    text-decoration: none;
+    color: initial;
+}
+.bread-crumbs .active a{
+    font-weight: bold;
+    color: #F16D7F;
+}
+.products-wrp{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.product-card a{
+    text-decoration: none;
+    color: initial;
 }
 
 .offer{

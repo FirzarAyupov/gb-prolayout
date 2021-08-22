@@ -9,6 +9,13 @@ body {
   background-color: #fff;
 }
 
+.padding-site {
+  padding-left: 12.481%;
+  padding-right: 12.481%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .container {
   max-width: 1140px;
   margin: auto;
@@ -345,6 +352,69 @@ body {
 
 .header-banner-subtitle span {
   color: #F16D7F;
+}
+
+.single-header {
+  background-color: #F8F3F4;
+  height: 148px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.single-title {
+  text-transform: uppercase;
+  color: #F16D7F;
+}
+
+.bread-crumbs {
+  list-style: none;
+}
+
+.bread-crumbs li {
+  display: inline;
+  text-transform: uppercase;
+}
+
+.bread-crumbs li::after {
+  content: "/";
+  margin: 0 3px 0 6px;
+}
+
+li:last-child::after {
+  content: none;
+}
+
+.bread-crumbs a {
+  text-decoration: none;
+  color: initial;
+}
+
+.bread-crumbs .active a {
+  font-weight: bold;
+  color: #F16D7F;
+}
+
+.products-wrp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.product-card a {
+  text-decoration: none;
+  color: initial;
 }
 
 .offer {
