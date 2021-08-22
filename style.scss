@@ -305,6 +305,7 @@ fill: red;
 .offer-card{
     width: 360px;
     height: 260px;
+    background-position: center center;
 }
 
 .offer-card-wide{
@@ -432,6 +433,10 @@ rgba(33, 22, 22, 0.7));
     background-color: #FFFFFF;
     margin: 18px auto 0;
 }
+.products-btn:hover{
+    background-color: #F16D7F;
+    color: #FFF;
+}
 
 .features{
     background-color: #222224;
@@ -446,6 +451,7 @@ rgba(33, 22, 22, 0.7));
 .feature{
     color: #FBFBFB;
     text-align: center;
+    max-width: 360px;
 }
 
 .feature svg{
@@ -462,10 +468,12 @@ rgba(33, 22, 22, 0.7));
     line-height: 16px;
 }
 
+footer{
+    background-image: url(img/subscribe-photo.jpg);
+}
 .subscribe{
-    background: url(img/subscribe-photo.jpg), rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.7);
     background-blend-mode: color;
-    background-repeat: no-repeat;
     height: 448px;
 }
 
@@ -569,9 +577,64 @@ rgba(33, 22, 22, 0.7));
     align-items: center;
 }
 
+.page-footer-socials-item:hover{
+    background-color: #F16D7F;
+}
+.page-footer-socials-item:hover svg{
+    fill: #FFF;
+}
+
 @media (max-width: 1024px) {
+    .container{
+        padding-left: 16px;
+        padding-right: 16px;
+    }    
     .header-banner {
-        height: 1vh;
+        min-height: 100vh;
     }
+    .offer-card{
+        flex-basis: calc(100% / 3 - 1.2em);
+        height: 167px;
+        background-size: contain;
+    }
+
+    .offer-card-wide{
+        height: 116px;
+        margin-top: 19px;
+    }
+
+    .product-card{
+        max-width: calc(100% / 3 - 16px);
+        margin-bottom: 16px;
+    }
+}
+    @media (max-width: 768px){
     
+    .product-card {
+        max-width: calc(50% - 8px);
+    }
+
+    .features{
+        height: 610px;
+        padding: 0;
+    }
+
+    .features .container{
+        height: 100%;
+        flex-direction: column;        
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    footer{        
+        background-size: cover;        
+        background-position: 25%;
+    }
+    .subscribe{
+        height: 614px;
+    }
+    .subscribe .container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
 }
