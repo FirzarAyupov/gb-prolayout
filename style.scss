@@ -337,7 +337,21 @@ li:last-child::after{
     text-decoration: none;
     color: initial;
 }
-
+.product-filter-block{
+    margin-top: 51px;
+    margin-bottom: 64px;
+    text-transform: uppercase;
+    display: flex;
+    font-size: 14px;
+}
+.filter-main{
+    margin-left: 16px; 
+    margin-right: 304px;
+    font-weight: bold; 
+}
+.filter-second{
+    color: #6F6E6E;
+}
 .offer{
     display: flex;
     flex-wrap: wrap;
@@ -484,8 +498,41 @@ rgba(33, 22, 22, 0.7));
     margin: 18px auto 0;
 }
 .products-btn:hover{
-    background-color: #F16D7F;
+    background-color: #F16D7F;   
     color: #FFF;
+}
+
+.page-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-wrp{
+        padding: 16px;
+        border: 1px solid #EBEBEB;
+        display: flex;
+    }
+    &-list {
+        padding: 10px;
+
+        &-item {
+            display: inline-block;             
+        }
+        &-link{
+            text-decoration: none;
+            color: #C4C4C4;
+            padding: 0 10px;
+            font-size: 16px;
+            
+            &-active {
+                color: #EF5B70;
+            }
+        }    
+    }
+    &-btn{
+        font-weight: bold;
+        border: none;
+        background-color: initial;
+    }
 }
 
 .features{
@@ -589,7 +636,9 @@ footer{
     background: #F16D7F;
     color: #FFF;
 }
-
+.subscribe-form-btn:hover{
+    background-color: #E05C6E;
+}
 
 .footer-bottom{
     background-color: #222224;
