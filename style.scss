@@ -349,17 +349,12 @@ li:last-child::after{
     width: 360px;
     font-weight: bold; 
     position: relative;
-    box-sizing: border-box;
+    box-sizing: border-box;   
 }
 #filter-main-switch{
     display: none;    
 }
-.filter-main-group-title{
-    list-style: none;
-}
-.filter-main-group-title::marker{
-    display: none;
-}
+
 .filter-main svg{
     fill: #000000;
     margin-left: 11px;
@@ -374,8 +369,23 @@ li:last-child::after{
     display: none;
     position: absolute;
     z-index: 20;
+    left: -16px;
+    padding-left: 16px;     
+    background-color: #FFF;
+    width: 360px;
 }
-
+.filter-main-group-title{
+    list-style: none;
+    border-bottom: 1px solid #EBEBEB;
+    border-left: 5px solid #EF5B70;
+    padding: 11px;
+}
+.filter-main-group-title::marker{
+    display: none;
+}
+.filter-main-group-list{
+    
+}
 .filter-main-list li{
     list-style: none;
 }
