@@ -428,10 +428,24 @@ li:last-child::after {
 }
 
 .filter-main {
-  margin-left: 14px;
+  padding: 13px 16px;
   width: 360px;
   font-weight: bold;
   position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#filter-main-switch {
+  display: none;
+}
+
+.filter-main-group-title {
+  list-style: none;
+}
+
+.filter-main-group-title::marker {
+  display: none;
 }
 
 .filter-main svg {
@@ -439,28 +453,29 @@ li:last-child::after {
   margin-left: 11px;
 }
 
-.filter-main-wrp {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  z-index: 20;
-  padding: 14px;
+.filter-main:hover label {
+  color: #EF5B70;
 }
 
-.filter-main:hover {
-  width: 360px;
-  position: absolute;
-  background-color: #FFF;
+.filter-main:hover svg {
+  fill: #EF5B70;
 }
 
 .filter-main-list {
   display: none;
+  position: absolute;
+  z-index: 20;
 }
 
 .filter-main-list li {
   list-style: none;
 }
 
-.filter-main:hover .filter-main-list {
+.filter-main-group {
+  padding: 11px;
+}
+
+#filter-main-switch:checked ~ .filter-main-list {
   display: block;
 }
 
