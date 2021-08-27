@@ -537,16 +537,75 @@ li:last-child::after {
 
 #filter-main-switch:checked ~ .filter-main-list {
   display: block;
+  background: #FFFFFF;
+  -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+          box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
 }
 
 .filter-second {
   font-size: 14px;
   color: #6F6E6E;
   margin-left: 28px;
+  position: relative;
+  min-width: 79px;
+  background-color: #FFF;
+}
+
+#filter-size {
+  display: none;
+}
+
+.product-filters {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.product-filter-group {
+  width: 100%;
+  top: 22px;
+  left: -9px;
+  padding: 7px 9px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  z-index: 20;
+  background: #FFFFFF;
+  -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+          box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+
+.product-filter-item {
+  margin-bottom: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product-filter-item input {
+  margin-right: 9px;
 }
 
 .filter-second .fa-chevron-down {
   margin-left: 10px;
+}
+
+.product-filter-size {
+  display: none;
+}
+
+#filter-size:checked ~ .product-filter-size {
+  display: block;
 }
 
 .offer {
