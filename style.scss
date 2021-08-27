@@ -237,10 +237,27 @@ body{
   /* === cart-btn === */
 .cart-btn {
     margin-left: 33px;
+    position: relative;
+    color: #FFF;
 }
 .cart-btn svg {
 width: 32px;
 height: 29px;
+}
+.cart-btn::before{
+    content: "5";
+    position: absolute;    
+    background-color: #F16D7F;
+    z-index: 20;
+    border-radius: 50%;
+    height: 19px;
+    width: 19px;
+    right: -8px;
+    top: -8px;
+    font-size: 12px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 .cart-btn:hover svg {
 fill: orange
