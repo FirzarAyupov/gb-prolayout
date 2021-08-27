@@ -433,6 +433,9 @@ li:last-child::after{
 .filter-main-group{
     padding: 11px;
 }
+.filter-main-group[open] summary{
+    color: #EF5B70;
+}
 #filter-main-switch:checked ~ .filter-main-list{
     display: block;
     background: #FFFFFF;
