@@ -362,7 +362,7 @@ li:last-child::after{
     font-size: 14px;
 }
 .filter-main{
-    padding-left: 13px;
+    padding-left: 16px;
     width: 360px;
     font-weight: bold; 
     position: relative;
@@ -376,20 +376,22 @@ li:last-child::after{
     fill: #000000;
     margin-left: 11px;
 }
-.filter-main:hover label, label ~ #filter-main-switch:checked{
+.filter-main:hover label, label ~ #filter-main-switch:checked, .filter-main-list label{
     color: #EF5B70;
 }
-.filter-main:hover svg{
+.filter-main:hover svg, .filter-main-list svg{
     fill: #EF5B70;
 }
 .filter-main-list{
-    top: 24px;
+    padding-top: 13px;
+    top: -13px;
     display: none;
     position: absolute;
     z-index: 20;
-    left: -16px;
+    left: 0;
     padding-left: 16px;     
     background-color: #FFF;
+    box-sizing: border-box;
     width: 360px;
 }
 .filter-main-group-title{      
