@@ -8,11 +8,8 @@
     list-style: none;
 }
 .shoping-cart-product-list{
-    width: 100%;
-}
-
-.shoping-cart-details{
-    width: 360px;
+    flex-grow: 3;
+    margin-right: 128px;
 }
 .shoping-cart-product-item-details{
     display: flex;
@@ -78,4 +75,83 @@
 }
 .shoping-cart-product-del:hover svg{
         fill: #FF6A6A;
+}
+.shoping-cart-btns-group{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 72px;
+}
+.shoping-cart-clear-btn, .shoping-cart-continue-btn{
+    border: 1px solid #A4A4A4;
+    padding: 16px 40px;
+    background-color: initial;
+}
+.shoping-cart-details{
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+}
+.shoping-cart-details input{
+    margin-top: 20px;
+    padding: 13px 0 13px 17px;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    border: 1px solid #A4A4A4;
+}
+.shoping-cart-details-title{
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+}
+.shoping-cart-quote-btn{
+    border: 1px solid #A4A4A4;
+    background-color: initial;
+    width: fit-content;
+    margin-top: 20px;
+    padding: 10px 15px;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+    color: #4A4A4A;
+    text-transform: uppercase;
+}
+.shoping-cart-sum{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    background: #F5F3F3;
+    margin-top: 57px;
+    padding: 42px;
+    box-sizing: border-box;
+}
+.shoping-cart-sub-total{
+    font-size: 11px;
+    line-height: 13px;
+    color: #4A4A4A;
+}
+.shoping-cart-grand-total{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 12px;
+    margin-bottom: 21px;
+    color: #222222;
+}
+.line{
+    border-bottom: 1px solid #E2E2E2;
+}
+.shoping-cart-submit{
+    background-color: #F16D7F;
+    color: #FFF;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 16px 0;
+    border: none;
+    &:hover{
+        background-color: #E05C6E;
+    }
 }
