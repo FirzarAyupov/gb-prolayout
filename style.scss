@@ -1,5 +1,6 @@
 $max-width: 1140px;
 @import 'product';
+@import 'cart';
 
 *{
     margin: 0;
@@ -323,6 +324,7 @@ fill: red;
 .single-title{
     text-transform: uppercase;
     color: #F16D7F;
+    font-weight: 400;
 }
 .bread-crumbs{
     list-style: none;
