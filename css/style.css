@@ -349,6 +349,13 @@
   color: #222222;
 }
 
+.shoping-cart-grand-total-value {
+  color: #F16D7F;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+}
+
 .line {
   border-bottom: 1px solid #E2E2E2;
 }
@@ -662,8 +669,7 @@ body {
   height: 29px;
 }
 
-.cart-btn::before {
-  content: "5";
+.cart-btn-count {
   position: absolute;
   background-color: #F16D7F;
   z-index: 20;
@@ -701,7 +707,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: url(img/head-img.png), #F1E4E6;
+  background: url(../img/head-img.png), #F1E4E6;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom left;
@@ -758,6 +764,16 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.single-header-wrp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .single-title {
@@ -1044,23 +1060,23 @@ li:last-child::after {
 }
 
 .offer-card-forwomen {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(33, 22, 22, 0.7)), to(rgba(33, 22, 22, 0.7))), url(img/forwomen.jpg);
-  background: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url(img/forwomen.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(33, 22, 22, 0.7)), to(rgba(33, 22, 22, 0.7))), url(../img/forwomen.jpg);
+  background: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url(../img/forwomen.jpg);
 }
 
 .offer-card-formen {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(33, 22, 22, 0.7)), to(rgba(33, 22, 22, 0.7))), url(img/formen.jpg);
-  background: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url(img/formen.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(33, 22, 22, 0.7)), to(rgba(33, 22, 22, 0.7))), url(../img/formen.jpg);
+  background: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url(../img/formen.jpg);
 }
 
 .offer-card-forkids {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(33, 22, 22, 0.7)), to(rgba(33, 22, 22, 0.7))), url(img/forkids.jpg);
-  background: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url(img/forkids.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(33, 22, 22, 0.7)), to(rgba(33, 22, 22, 0.7))), url(../img/forkids.jpg);
+  background: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url(../img/forkids.jpg);
 }
 
 .offer-card-accesories {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(33, 22, 22, 0.7)), to(rgba(33, 22, 22, 0.7))), url(img/accesories.jpg);
-  background: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url(img/accesories.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(33, 22, 22, 0.7)), to(rgba(33, 22, 22, 0.7))), url(../img/accesories.jpg);
+  background: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url(../img/accesories.jpg);
 }
 
 .products {
@@ -1183,7 +1199,7 @@ li:last-child::after {
 }
 
 .page-nav-wrp {
-  padding: 16px;
+  padding: 12px 16px;
   border: 1px solid #EBEBEB;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1191,7 +1207,7 @@ li:last-child::after {
 }
 
 .page-nav-list {
-  padding: 10px;
+  padding: 0 10px;
 }
 
 .page-nav-list-item {
@@ -1265,7 +1281,7 @@ li:last-child::after {
 }
 
 footer {
-  background-image: url(img/subscribe-photo.jpg);
+  background-image: url(../img/subscribe-photo.jpg);
 }
 
 .subscribe {

@@ -246,8 +246,7 @@ body{
 width: 32px;
 height: 29px;
 }
-.cart-btn::before{
-    content: "5";
+.cart-btn-count{
     position: absolute;    
     background-color: #F16D7F;
     z-index: 20;
@@ -268,13 +267,12 @@ fill: orange
 fill: red;
 }
 
-
 .header-banner{
     min-height: 764px;    
     width: 100%;
     display: flex;
     align-items: center;
-    background: url(img/head-img.png), #F1E4E6;
+    background: url(../img/head-img.png), #F1E4E6;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom left;
@@ -320,6 +318,11 @@ fill: red;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.single-header-wrp{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
 }
 .single-title{
     text-transform: uppercase;
@@ -536,20 +539,20 @@ rgba(33, 22, 22, 0.7));
     
 .offer-card-forwomen{
     background: $toner,
-        url(img/forwomen.jpg);
+        url(../img/forwomen.jpg);
 }
 
 .offer-card-formen{
     background: $toner,
-        url(img/formen.jpg);
+        url(../img/formen.jpg);
 }
 .offer-card-forkids{
     background: $toner,
-        url(img/forkids.jpg);
+        url(../img/forkids.jpg);
 }
 .offer-card-accesories{
     background: $toner,
-        url(img/accesories.jpg);
+        url(../img/accesories.jpg);
 }
 
 .products{
@@ -643,12 +646,12 @@ rgba(33, 22, 22, 0.7));
     justify-content: center;
     align-items: center;
     &-wrp{
-        padding: 16px;
+        padding: 12px 16px;
         border: 1px solid #EBEBEB;
         display: flex;
     }
     &-list {
-        padding: 10px;
+        padding: 0 10px;
 
         &-item {
             display: inline-block;   
@@ -711,7 +714,7 @@ rgba(33, 22, 22, 0.7));
 }
 
 footer{
-    background-image: url(img/subscribe-photo.jpg);
+    background-image: url(../img/subscribe-photo.jpg);
 }
 .subscribe{
     background: rgba(255, 255, 255, 0.7);
