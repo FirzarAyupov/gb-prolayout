@@ -286,7 +286,7 @@
           flex-direction: column;
 }
 
-.shoping-cart-details input {
+.shoping-cart-adress, .shoping-cart-state, .shoping-cart-postcode {
   margin-top: 20px;
   padding: 13px 0 13px 17px;
   font-weight: 300;
@@ -295,12 +295,21 @@
   border: 1px solid #A4A4A4;
 }
 
+.shoping-cart-state:active, .shoping-cart-postcode ~ #shoping-cart-postcode:focus {
+  border-color: #222222;
+}
+
 .shoping-cart-details-title {
   text-transform: uppercase;
   font-weight: 300;
   font-size: 16px;
   line-height: 19px;
   color: #222222;
+}
+
+#shoping-cart-state, #shoping-cart-postcode {
+  border: none;
+  outline: none;
 }
 
 .shoping-cart-quote-btn {
