@@ -439,20 +439,40 @@ body {
 }
 
 .page-header svg {
-  width: 100%;
-  height: 100%;
   fill: #E8E8E8;
 }
 
-.page-header button {
-  padding: 0;
-  background-color: transparent;
-  border: none;
-  display: block;
+.page-header-search-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .page-header-search-btn:hover svg {
   fill: orange;
+}
+
+.page-header-search-input {
+  width: 0;
+  min-height: 0;
+  margin-left: 10px;
+  background-color: initial;
+  padding: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #FFF;
+  border-color: transparent;
+}
+
+.page-header-search-input:focus {
+  width: 150px;
+  min-height: 20px;
+  -webkit-transition: width 1s ease;
+  transition: width 1s ease;
+  border: 2px solid #fff;
 }
 
 .account-btn svg {
@@ -650,6 +670,8 @@ body {
 /* === account-btn === */
 .account-btn {
   margin-left: 33px;
+  background-color: initial;
+  border: none;
 }
 
 .account-btn svg {
@@ -671,6 +693,8 @@ body {
   margin-left: 33px;
   position: relative;
   color: #FFF;
+  background-color: initial;
+  border: none;
 }
 
 .cart-btn svg {
