@@ -348,6 +348,9 @@ fill: red;
     text-transform: uppercase;
     color: #F16D7F;
     font-weight: 400;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
 }
 .bread-crumbs{
     list-style: none;
@@ -355,6 +358,9 @@ fill: red;
 .bread-crumbs li{
     display: inline;
     text-transform: uppercase;
+    font-weight: 300;
+    color: #636363;
+    font-size: 14px;
 }
 .bread-crumbs li::after{
     content: "/";

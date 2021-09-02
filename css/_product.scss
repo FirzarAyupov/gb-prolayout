@@ -47,6 +47,8 @@
     margin-bottom: 27px;
     font-size: 14px;
     text-transform: uppercase;
+    font-weight: 300;
+    font-size: 14px;
 }
 .product-page-catalog-name::after{
     content: "";
@@ -60,7 +62,8 @@
     text-transform: uppercase;
     font-weight: 300;
     font-size: 18px;
-    margin-bottom: 48px;
+    margin-bottom: 48px;    
+    color: #5E5E5E;
 }
 .product-page-txt{
     max-width: 555px;
@@ -68,6 +71,7 @@
     font-size: 14px;
     line-height: 17px;
     text-align: center;
+    color: #5E5E5E;
 }
 .product-page-price{
     font-weight: 300;
