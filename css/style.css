@@ -393,6 +393,7 @@
 
 .regisration-page-form {
   margin-right: 128px;
+  min-width: 360px;
 }
 
 .regisration-page-form-username-group, .regisration-page-form-login-group {
@@ -494,6 +495,31 @@
 .regisration-page-form-submit svg {
   fill: #FFF;
   margin-left: 20px;
+}
+
+.regisration-page-perks {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.regisration-page-perk-title {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.regisration-page-perk-txt {
+  margin: 22px 0;
+}
+
+.regisration-page-perk-list li {
+  list-style: none;
+  background-image: url(../img/checkmark.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  padding-left: 42px;
+  margin-bottom: 16px;
 }
 
 * {
