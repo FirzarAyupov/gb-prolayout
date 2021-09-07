@@ -138,7 +138,7 @@ body{
     box-sizing: border-box;
     background-color: #fff;
     list-style: none;
-    
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
     position: absolute;
     top: 75px;
     /* значение в свойстве top удобно задать через переменную равную высоте первого блока */
