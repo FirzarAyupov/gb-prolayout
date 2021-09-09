@@ -1219,12 +1219,15 @@ li:last-child::after {
   width: 360px;
   height: 260px;
   background-position: center center;
+  background-size: cover;
 }
 
 .offer-card-wide {
   width: 100%;
   height: 180px;
   margin-top: 30px;
+  background-size: cover;
+  background-position: center;
 }
 
 .offer-card p, .offer-card-wide p {
@@ -1247,23 +1250,23 @@ li:last-child::after {
 }
 
 .offer-card-forwomen {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(33, 22, 22, 0.7)), to(rgba(33, 22, 22, 0.7))), url(../img/forwomen.jpg);
-  background: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url(../img/forwomen.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(33, 22, 22, 0.7)), to(rgba(33, 22, 22, 0.7))), url(../img/forwomen.jpg);
+  background-image: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url(../img/forwomen.jpg);
 }
 
 .offer-card-formen {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(33, 22, 22, 0.7)), to(rgba(33, 22, 22, 0.7))), url(../img/formen.jpg);
-  background: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url(../img/formen.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(33, 22, 22, 0.7)), to(rgba(33, 22, 22, 0.7))), url(../img/formen.jpg);
+  background-image: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url(../img/formen.jpg);
 }
 
 .offer-card-forkids {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(33, 22, 22, 0.7)), to(rgba(33, 22, 22, 0.7))), url(../img/forkids.jpg);
-  background: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url(../img/forkids.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(33, 22, 22, 0.7)), to(rgba(33, 22, 22, 0.7))), url(../img/forkids.jpg);
+  background-image: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url(../img/forkids.jpg);
 }
 
 .offer-card-accesories {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(33, 22, 22, 0.7)), to(rgba(33, 22, 22, 0.7))), url(../img/accesories.jpg);
-  background: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url(../img/accesories.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(33, 22, 22, 0.7)), to(rgba(33, 22, 22, 0.7))), url(../img/accesories.jpg);
+  background-image: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url(../img/accesories.jpg);
 }
 
 .products {
@@ -1288,6 +1291,10 @@ li:last-child::after {
           filter: brightness(50%);
 }
 
+.products-title {
+  font-size: 30px;
+}
+
 .products-title, .products-subtitle {
   width: 100%;
   text-align: center;
@@ -1296,6 +1303,8 @@ li:last-child::after {
 
 .products-subtitle {
   margin-bottom: 48px;
+  font-size: 14px;
+  color: #9F9F9F;
 }
 
 .product-card {
@@ -1469,6 +1478,8 @@ li:last-child::after {
 
 footer {
   background-image: url(../img/subscribe-photo.jpg);
+  background-size: cover;
+  background-position: bottom;
 }
 
 .subscribe {
@@ -1636,7 +1647,6 @@ footer {
     -ms-flex-preferred-size: calc(100% / 3 - 1.2em);
         flex-basis: calc(100% / 3 - 1.2em);
     height: 167px;
-    background-size: contain;
   }
   .offer-card-wide {
     height: 116px;
@@ -1739,6 +1749,47 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .offer-card {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+    height: 247px;
+    width: 100%;
+    margin: 0 0 32px 0;
+    background-size: cover;
+  }
+  .offer-card-wide {
+    margin: 0;
+    height: 111px;
+  }
+  .product-card {
+    max-width: 100%;
+  }
+  .subscribe-info-txt {
+    font-size: 18px;
+  }
+  .subscribe-form-subtitle {
+    font-size: 14px;
+  }
+  .subscribe-form-email {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 245px;
+  }
+  .subscribe-form-btn {
+    width: 96px;
+  }
+  .footer-bottom {
+    height: 143px;
+    padding: 43px 0 9px 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .footer-bottom .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
 }
 /*# sourceMappingURL=style.css.map */
