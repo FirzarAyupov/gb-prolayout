@@ -323,10 +323,21 @@
   border: 1px solid #A4A4A4;
   padding: 16px 40px;
   background-color: initial;
+  text-transform: uppercase;
 }
 
 .shoping-cart-details {
   width: 360px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.shoping-cart-inputs-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -398,8 +409,7 @@
   font-weight: 300;
   font-size: 16px;
   line-height: 19px;
-  margin-top: 12px;
-  margin-bottom: 21px;
+  margin: 12px 0 0;
   color: #222222;
 }
 
@@ -412,6 +422,7 @@
 
 .line {
   border-bottom: 1px solid #E2E2E2;
+  margin: 21px 0 17px 0;
 }
 
 .shoping-cart-submit {
@@ -426,6 +437,105 @@
 
 .shoping-cart-submit:hover {
   background-color: #E05C6E;
+}
+
+@media (max-width: 1024px) {
+  .shoping-cart {
+    margin: 96px 16px 128px;
+  }
+  .shoping-cart-product-list {
+    margin-right: 64px;
+  }
+}
+
+@media (max-width: 768px) {
+  .shoping-cart {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 96px 16px 128px;
+  }
+  .shoping-cart-product-list {
+    margin: 0 0 64px;
+  }
+  .shoping-cart-product-item {
+    max-width: 100%;
+  }
+  .shoping-cart-details {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+  }
+  .shoping-cart-btns-group {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .shoping-cart-sum {
+    margin-top: 37px;
+    height: 100%;
+  }
+  .shoping-cart-inputs-block, .shoping-cart-sum {
+    width: calc(50% - 15px / 2);
+  }
+}
+
+@media (max-width: 480px) {
+  .shoping-cart {
+    margin: 96px 16px;
+  }
+  .shoping-cart-product-item {
+    height: 188px;
+  }
+  .shoping-cart-product-image {
+    height: 100%;
+  }
+  .shoping-cart-product-item-details {
+    height: 100%;
+  }
+  .shoping-cart-product-chars {
+    padding: 13px 53px 0 17px;
+  }
+  .shoping-cart-product-item {
+    margin-bottom: 32px;
+  }
+  .shoping-cart-product-item-title {
+    font-size: 16px;
+    line-height: 19px;
+    margin: 0 0 25px;
+  }
+  .shoping-cart-product-chars-item {
+    font-size: 14px;
+    line-height: 17px;
+    margin: 0;
+  }
+  .product-quantity {
+    font-size: 10px;
+    line-height: 12px;
+    max-width: 24px;
+    margin-left: 15px;
+  }
+  .shoping-cart-btns-group {
+    font-size: 12px;
+  }
+  .shoping-cart-clear-btn, .shoping-cart-continue-btn {
+    text-transform: none;
+  }
+  .shoping-cart-details {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .shoping-cart-inputs-block, .shoping-cart-sum {
+    width: 100%;
+  }
 }
 
 .regisration-page-form-wrp {
@@ -565,6 +675,38 @@
   background-position: left;
   padding-left: 42px;
   margin-bottom: 16px;
+}
+
+@media (max-width: 1024px) {
+  .regisration-page-form {
+    margin-right: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  .regisration-page-perks {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .regisration-page-perk-txt {
+    margin: 22px 0 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .regisration-page-form-wrp {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .regisration-page-form {
+    min-width: 100%;
+    margin: 0 0 40px;
+  }
+  .regisration-page-form-input {
+    max-width: 100%;
+  }
 }
 
 * {
@@ -1849,12 +1991,11 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     height: 100%;
     margin: 0;
-    padding: 24px 0 46px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
   }

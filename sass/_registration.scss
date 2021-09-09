@@ -94,3 +94,29 @@ margin-left: 20px;
     margin-bottom: 16px;
 
 }
+@media (max-width: 1024px){
+    .regisration-page-form{
+        margin-right: 22px;
+    }
+}
+@media (max-width: 768px){
+    .regisration-page-perks{
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .regisration-page-perk-txt {
+        margin: 22px 0 32px;
+    }
+}
+@media (max-width: 480px){
+    .regisration-page-form-wrp{
+        flex-direction: column;
+    }
+    .regisration-page-form{
+        min-width: 100%;
+        margin: 0 0 40px;
+    }
+    .regisration-page-form-input{
+        max-width: 100%;
+    }
+}
