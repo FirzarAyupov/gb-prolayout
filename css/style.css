@@ -18,6 +18,8 @@
   border: 1px solid #EAEAEA;
   position: relative;
   min-height: 777px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .prev-slide, .next-slide {
@@ -45,7 +47,7 @@
   top: -65px;
   background-color: #FFF;
   border: 1px solid #EAEAEA;
-  padding: 65px;
+  padding: 65px 250px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-align: center;
@@ -106,13 +108,13 @@
   color: #EF5B70;
   margin-top: 32px;
   margin-bottom: 64px;
+  width: 100%;
 }
 
 .product-page-price::after {
   content: "";
   display: block;
   border-top: 1px solid #EAEAEA;
-  width: 642px;
   margin-top: 64px;
 }
 
@@ -157,6 +159,50 @@
 .add-to-cart-btn svg {
   fill: #EF5B70;
   margin-right: 22px;
+}
+
+@media (max-width: 1024px) {
+  .product-page-info.container {
+    margin: 0 0 128px;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-page-slider {
+    height: 624px;
+    padding: 30px 0;
+    width: auto;
+    min-height: auto;
+    position: static;
+  }
+  .product-page-slider img {
+    height: 100%;
+    width: inherit;
+  }
+  .product-page-info {
+    top: 0;
+    padding: 65px 63px;
+    position: static;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-page-info {
+    padding: 65px 25px;
+  }
+  .product-page-slider img {
+    height: initial;
+    width: 100%;
+  }
+  .product-page-price::after {
+    margin: 31px 65px 0;
+  }
+  .product-page-info .filter-second {
+    font-size: 10px;
+  }
+  .product-page-info.container {
+    margin: 0 0 64px 0;
+  }
 }
 
 .shoping-cart {
@@ -1641,8 +1687,8 @@ footer {
 
 @media (max-width: 1024px) {
   .container {
-    padding-left: 16px;
-    padding-right: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
   }
   .offer-card {
     -ms-flex-preferred-size: calc(100% / 3 - 1.2em);
@@ -1657,9 +1703,6 @@ footer {
     max-width: calc(100% / 3 - 16px);
     margin-bottom: 16px;
   }
-}
-
-@media (max-width: 1024px) {
   .header-banner-img {
     min-height: 535px;
     background-position: bottom left -100px;
@@ -1727,6 +1770,9 @@ footer {
 }
 
 @media (max-width: 480px) {
+  .account-btn, .cart-btn {
+    display: none;
+  }
   .header-banner-wrp {
     min-height: 367px;
     display: -webkit-box;

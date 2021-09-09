@@ -875,14 +875,13 @@ footer{
 
 @media (max-width: 1024px) {
     .container{
-        padding-left: 16px;
-        padding-right: 16px;
-    }    
+        margin-left: 16px;
+        margin-right: 16px;
+    }
     .offer-card{
         flex-basis: calc(100% / 3 - 1.2em);
         height: 167px;
     }
-
     .offer-card-wide{
         height: 116px;
         margin-top: 19px;
@@ -892,8 +891,7 @@ footer{
         max-width: calc(100% / 3 - 16px);
         margin-bottom: 16px;
     }
-}
-@media (max-width: 1024px){
+
     .header-banner-img{
         min-height: 535px;
         background-position: bottom left -100px;
@@ -948,6 +946,9 @@ footer{
     }
 }
 @media (max-width: 480px){
+    .account-btn, .cart-btn{
+        display: none;
+    }
     .header-banner-wrp{
         min-height: 367px;
         display: flex;
