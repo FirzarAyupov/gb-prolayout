@@ -2026,4 +2026,13 @@ footer {
     margin-left: 9px;
   }
 }
+
+@media (max-width: 375px) {
+  .subscribe-form-email {
+    width: 100%;
+  }
+  .subscribe-form-btn {
+    width: 40%;
+  }
+}
 /*# sourceMappingURL=style.css.map */
