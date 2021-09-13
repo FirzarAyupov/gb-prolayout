@@ -488,7 +488,10 @@
 
 @media (max-width: 480px) {
   .shoping-cart {
-    margin: 96px 16px;
+    margin: 39px 9px 96px;
+  }
+  .shoping-cart-product-list {
+    margin-bottom: 48px;
   }
   .shoping-cart-product-item {
     height: 188px;
@@ -501,9 +504,18 @@
   }
   .shoping-cart-product-chars {
     padding: 13px 53px 0 17px;
+    min-width: 144px;
   }
   .shoping-cart-product-item {
     margin-bottom: 32px;
+  }
+  .shoping-cart-product-del svg {
+    width: 10px;
+    height: 11px;
+  }
+  .shoping-cart-product-del {
+    top: 17px;
+    right: 12px;
   }
   .shoping-cart-product-item-title {
     font-size: 16px;
@@ -523,9 +535,15 @@
   }
   .shoping-cart-btns-group {
     font-size: 12px;
+    margin-top: 30px;
   }
   .shoping-cart-clear-btn, .shoping-cart-continue-btn {
     text-transform: none;
+    padding: 9px;
+    width: 100%;
+  }
+  .shoping-cart-clear-btn {
+    margin-right: 9px;
   }
   .shoping-cart-details {
     -webkit-box-orient: vertical;
@@ -2003,7 +2021,7 @@ footer {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin: 24px 0 32px;
+    margin: 24px 16px 32px;
   }
   .filter-main {
     padding: 0;
@@ -2032,7 +2050,16 @@ footer {
     width: 100%;
   }
   .subscribe-form-btn {
-    width: 40%;
+    width: 50%;
+  }
+  .subscribe-info {
+    width: auto;
+  }
+  .subscribe-form-wrp {
+    width: 100%;
+  }
+  .subscribe-form {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
